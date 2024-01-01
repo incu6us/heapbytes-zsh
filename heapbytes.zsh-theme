@@ -1,7 +1,7 @@
 #Author : Heapbytes <Gourav> (https://github.com/heapbytes)
 
 PROMPT='
-┌─[%F{blue} %~%f] [%F{green} $(get_ip_address)%f] $(git_prompt_info)
+┌─[%F{blue} %~%f] [%F{green} $(get_ip_address)%f] %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}
 └─➜ '
 
 RPROMPT='[%F{red}%?%f]'
