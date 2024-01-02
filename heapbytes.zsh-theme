@@ -1,7 +1,7 @@
 #Author : Heapbytes <Gourav> (https://github.com/heapbytes)
 
 PROMPT='
-┌─[%F{green} $(get_ip_address)%f] [%F{blue} %~%f] $(git_prompt_info)
+┌─[%F{green} $(get_ip_address)%f] [%F{cyan} %~%f] $(git_prompt_info)
 └─➜ '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}(%{$fg[green]%}"
