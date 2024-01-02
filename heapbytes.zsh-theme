@@ -1,10 +1,14 @@
 #Author : Heapbytes <Gourav> (https://github.com/heapbytes)
 
 PROMPT='
-┌─[%F{blue} %~%f] [%F{green} $(get_ip_address)%f] %{$fg_bold[green]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}
+┌─[%F{blue} %~%f] [%F{green} $(get_ip_address)%f] $(git_prompt_info)
 └─➜ '
 
 RPROMPT='[%F{red}%?%f]'
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}(%{$fg[green]%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✏️ "
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%}) ✅"
 
 get_ip_address() {
   if [[ -n "$(ifconfig tun0 2>/dev/null)" ]]; then
@@ -15,4 +19,3 @@ get_ip_address() {
     echo "%{$fg[red]%}No IP%{$reset_color%}"
   fi
 }
-
