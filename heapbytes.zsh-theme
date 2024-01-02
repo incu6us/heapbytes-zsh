@@ -4,7 +4,6 @@ PROMPT='
 ┌─[%F{blue} %~%f] [%F{green} $(get_ip_address)%f] $(git_prompt_info)
 └─➜ '
 
-RPROMPT='[%F{red}%?%f]'
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}(%{$fg[green]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✏️ "
